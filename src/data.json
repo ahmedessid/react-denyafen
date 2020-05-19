@@ -1,0 +1,75 @@
+[
+    {
+      "id": 0,
+      "articleTitle": "Elephant",
+      "authorName": "Emna Dammak",
+      "imgUrl": "https://lumiere-a.akamaihd.net/v1/images/p_disneyplus_disneynature_elephant_19046_1a6ea172.jpeg?region=0%2C0%2C540%2C810",
+      "visitorsNumber": "17K",
+      "categoryTag": "أفلام",
+      "genderTag": "أصناف أخرى"
+    },
+    {
+        "id": 1,
+        "articleTitle": "The Outsider",
+        "authorName": "Aziz Abidi",
+        "imgUrl": "https://static.raru.co.za/cover/2018/06/30/6596231-l.jpg?v=1530313200",
+        "visitorsNumber": "8K",
+        "categoryTag": "كتب",
+        "genderTag": "تشويق"
+    },
+    {
+        "id": 2,
+        "articleTitle": "مباريات الجوع",
+        "authorName": "Mouna Chedly",
+        "imgUrl": "assets/img/2.png",
+        "visitorsNumber": "17K",
+        "categoryTag": "كتب",
+        "genderTag": "فانتازيا"
+      },
+      {
+          "id": 3,
+          "articleTitle": "The Upside of falling",
+          "authorName": "نورس الرميلي",
+          "imgUrl": "assets/img/1.jpg",
+          "visitorsNumber": "6K",
+          "categoryTag": "كتب",
+          "genderTag": "رومانسية"
+      },
+      {
+        "id": 4,
+        "articleTitle": "Dix-neuf",
+        "authorName": "Sirine Khouja",
+        "imgUrl": "http://aliastasia.com/wp-content/uploads/2017/04/iii-819x1024.jpg",
+        "visitorsNumber": "9K",
+        "categoryTag": "كتب",
+        "genderTag": "أصناف أخرى"
+      },
+      {
+          "id": 5,
+          "articleTitle": "Les enfants du temps",
+          "authorName": "Samir Karoui",
+          "imgUrl": "https://fr.web.img4.acsta.net/pictures/19/12/03/12/19/1546306.jpg",
+          "visitorsNumber": "8K",
+          "categoryTag": "انمي و مانجا",
+          "genderTag": "رومانسية"
+      },
+      {
+          "id": 6,
+          "articleTitle": "Tune in for Love",
+          "authorName": "Hedi Lakhal",
+          "imgUrl": "https://www.nautiljon.com/images/asian-movie/00/50/tune_in_for_love_3505.jpg",
+          "visitorsNumber": "4.5K",
+          "categoryTag": "أفلام",
+          "genderTag": "رومانسية"
+        },
+        {
+            "id": 7,
+            "articleTitle": "الدار المسكونة..",
+            "authorName": "Nadia Ltaief",
+            "imgUrl": "https://ffipractitioner.org/wp-content/uploads/2017/05/ffi-feature-haunted-mansion.jpg",
+            "visitorsNumber": "6K",
+            "categoryTag": "إبداعاتكم",
+            "genderTag": "رعب"
+        }
+
+]
