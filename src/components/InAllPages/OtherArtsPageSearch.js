@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
@@ -115,59 +115,54 @@ const BUTTONS = [
   { id: 12, title: 'أخرى', link: '/other_topics/okhra' }
 ]
 
-export default class OtherArtsPageSearch extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      active: 0
-    };
-  }
+function OtherArtsPageSearch(props) {
+  const [active, setActive] = useState(0);
 
-  setActive = (index) => {
-    var prevState = this.state.active;
+  const setBtnActive = (index) => {
+    var prevState = active;
     if (index !== prevState)
-      this.setState({ active: index });
+      setActive(index);
     else {
-      this.setState({ active: 0 });
+      setActive(0);
     }
   }
 
-  setLink = (index, link) => {
-    var prevState = this.state.active;
+  const setLink = (index, link) => {
+    var prevState = active;
     if (index !== prevState)
-    return link;
+      return link;
     else return "/other_topics";
   }
 
-  getClass = (index, name) => {
-    var current = this.state.active;
+  const getClass = (index, name) => {
+    var current = active;
     if (index === current)
       return name + ' active';
     return name;
   }
 
-  render() {
-    return (
-      <HomeSearchCategorie>
-        <SearchCategorieRightDiv><img src="https://img.icons8.com/bubbles/240/cottage.png" /></SearchCategorieRightDiv>
-        <SearchCategorieLeftDiv>
-          <h2>حاجات أخرى.. كل شيء في حياتنا فن!</h2>
-          <form><input className="form-control" type="search" placeholder="لوج على أي حاجة تحبها..." /></form>
-          <p>تنجم زادة تلوّج حسب الـ Catégorie الي تحب عليها:<br /></p>
-          <HomeBtnsFlex>
-            {BUTTONS.map((bt, index) => (
-              <Link to={() => this.setLink(bt.id, bt.link)} key={index}><button
-                onClick={() => this.setActive(bt.id)}
-                className={`btn ${this.getClass(bt.id, bt.title)}`}>
-                {bt.title}
-              </button></Link>
-            ))}
+  return (
+    <HomeSearchCategorie>
+      <SearchCategorieRightDiv><img src="https://img.icons8.com/bubbles/240/cottage.png" /></SearchCategorieRightDiv>
+      <SearchCategorieLeftDiv>
+        <h2>حاجات أخرى.. كل شيء في حياتنا فن!</h2>
+        <form><input className="form-control" type="search" placeholder="لوج على أي حاجة تحبها..." /></form>
+        <p>تنجم زادة تلوّج حسب الـ Catégorie الي تحب عليها:<br /></p>
+        <HomeBtnsFlex>
+          {BUTTONS.map((bt, index) => (
+            <Link to={() => setLink(bt.id, bt.link)} key={index}><button
+              onClick={() => setBtnActive(bt.id)}
+              className={`btn ${getClass(bt.id, bt.title)}`}>
+              {bt.title}
+            </button></Link>
+          ))}
 
-          </HomeBtnsFlex>
+        </HomeBtnsFlex>
 
-        </SearchCategorieLeftDiv>
-        <BeforeDiv />
-      </HomeSearchCategorie>
-    )
-  }
+      </SearchCategorieLeftDiv>
+      <BeforeDiv />
+    </HomeSearchCategorie>
+  )
 }
+
+export default OtherArtsPageSearch;

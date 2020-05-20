@@ -35,7 +35,7 @@ function App() {
             <Route path="/profile" component={Profile} />
             <Route path="/editprofile" component={EditProfile} />
             <Route path="/desactivate_account" component={DesactivateAccount} />
-            <Route exact path="/other_topics" component={OtherArtsPage}/>
+            <Route exact path="/other_topics" component={OtherArtsPage} />
           </ScrollToTop>
         </Switch>
         <Footer />
